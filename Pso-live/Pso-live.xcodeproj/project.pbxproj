@@ -13,7 +13,7 @@
 /* Begin PBXFileReference section */
 		DF62A9B323CBA014008BFAFD /* Pso_live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pso_live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF62A9B623CBA014008BFAFD /* Pso_live.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pso_live.h; sourceTree = "<group>"; };
-		DF62A9B723CBA014008BFAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF84AF0723CCA2EA00793E46 /* pso-live.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pso-live.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 		DF62A9B523CBA014008BFAFD /* Pso-live */ = {
 			isa = PBXGroup;
 			children = (
+				DF84AF0723CCA2EA00793E46 /* pso-live.plist */,
 				DF62A9B623CBA014008BFAFD /* Pso_live.h */,
-				DF62A9B723CBA014008BFAFD /* Info.plist */,
 			);
 			path = "Pso-live";
 			sourceTree = "<group>";

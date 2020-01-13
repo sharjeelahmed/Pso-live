@@ -1,0 +1,16 @@
+PODS:
+  - Pso-live (1.0.0)
+
+DEPENDENCIES:
+  - Pso-live (from `../Pso-live/`)
+
+EXTERNAL SOURCES:
+  Pso-live:
+    :path: "../Pso-live/"
+
+SPEC CHECKSUMS:
+  Pso-live: 6dcaf1589db826a027f024e76df942dcffeb930c
+
+PODFILE CHECKSUM: a7a71198bdef373d6f98c3c81fb7c53cfc8b4db3
+
+COCOAPODS: 1.8.4
