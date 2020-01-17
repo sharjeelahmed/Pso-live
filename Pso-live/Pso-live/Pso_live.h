@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APPinViewController.h"
+#import "APPinView.h"
 
 //! Project version number for Pso_live.
 FOUNDATION_EXPORT double Pso_liveVersionNumber;
