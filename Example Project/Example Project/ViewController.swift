@@ -16,6 +16,10 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
 	}
+	
+	@IBAction func btnPressed(_ sender:UIButton){
+		Bootstrapper.initializeWithParam(unique_param: "03124578451", token: "1#Jf@dJ3%e8O}qQYs{DS")
+	}
 
 
 }

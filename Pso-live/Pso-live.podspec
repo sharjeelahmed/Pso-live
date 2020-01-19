@@ -17,10 +17,10 @@ Pod::Spec.new do |spec|
   spec.source_files = 'Pso-live/**/*.{h,m,swift}'
 
   spec.exclude_files = "Pso-live/Pso-live/*.plist"
-  #spec.resources = "Pso-live/Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
+  spec.resources = "Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
 
 	
-	spec.resource = ["Pso-live/Views/*.{xib}"] #b590808
+	#spec.resource = ["Pso-live/Views/*.{xib}"] #b590808
 	#spec.resources      = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :commit => "b590808"
   spec.swift_version = '4.0'
   spec.static_framework = true
