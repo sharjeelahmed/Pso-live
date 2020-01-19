@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -15,7 +11,6 @@
             <string>Helvetica-Bold</string>
         </array>
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Medium</string>
         </array>
         <array key="HelveticaNeueLights.ttc">
@@ -27,7 +22,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VSPINView" customModule="Vouch365" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VSPINView" customModule="Pso_live" customModuleProvider="target">
             <connections>
                 <outlet property="fieldFourLabel" destination="mnJ-wO-0d6" id="sE5-xl-X2A"/>
                 <outlet property="fieldOneLabel" destination="J7I-m6-oOS" id="DDf-JE-gHi"/>
@@ -51,7 +46,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Art-Ep-FaO">
-                    <rect key="frame" x="343" y="10" width="22" height="22"/>
+                    <rect key="frame" x="340" y="10" width="25" height="24"/>
                     <connections>
                         <action selector="closeView:" destination="-1" eventType="touchUpInside" id="i5i-Hz-jbi"/>
                     </connections>
@@ -99,7 +94,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKC-nP-bRy" customClass="VSButton" customModule="Vouch365" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKC-nP-bRy" customClass="VSButton" customModule="Pso_live" customModuleProvider="target">
                     <rect key="frame" x="101" y="425" width="173" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="VlM-Mp-6hs"/>
@@ -115,8 +110,8 @@
                         <constraint firstAttribute="width" secondItem="Jh7-id-Qqs" secondAttribute="height" multiplier="61:53" id="T7M-Ee-uka"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="J7I-m6-oOS" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="72.5" y="340" width="17" height="34.5"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="J7I-m6-oOS" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="72.5" y="340.5" width="17" height="34.5"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -124,8 +119,8 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="PINBox" translatesAutoresizingMaskIntoConstraints="NO" id="efg-Hp-2NN">
                     <rect key="frame" x="121.5" y="331" width="61" height="53"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Yu-tg-AXR" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="143.5" y="340" width="17" height="34.5"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Yu-tg-AXR" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="143.5" y="340.5" width="17" height="34.5"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -133,8 +128,8 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="PINBox" translatesAutoresizingMaskIntoConstraints="NO" id="r1J-x6-HLr">
                     <rect key="frame" x="192.5" y="331" width="61" height="53"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RXB-kY-ngt" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="214.5" y="340" width="17" height="34.5"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RXB-kY-ngt" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="214.5" y="340.5" width="17" height="34.5"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -142,8 +137,8 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="PINBox" translatesAutoresizingMaskIntoConstraints="NO" id="QjG-UW-Mg2">
                     <rect key="frame" x="263.5" y="331" width="61" height="53"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-wO-0d6" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="285.5" y="340" width="17" height="34.5"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-wO-0d6" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="285.5" y="340.5" width="17" height="34.5"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -157,7 +152,6 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q1u-6T-dYw">
                     <rect key="frame" x="139" y="470" width="97" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -219,7 +213,7 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
     <resources>
-        <image name="PINBox" width="41" height="42"/>
-        <image name="pin_food" width="344" height="444"/>
+        <image name="PINBox" width="41.5" height="42"/>
+        <image name="pin_food" width="344.5" height="444.5"/>
     </resources>
 </document>

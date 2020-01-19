@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,7 +19,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SucessRedeemView" customModule="Vouch365" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SucessRedeemView" customModule="Pso_live" customModuleProvider="target">
             <connections>
                 <outlet property="image_logo" destination="lL4-ad-BfY" id="LPf-tk-SUA"/>
                 <outlet property="label_customerName" destination="2KC-wy-spH" id="Wwc-yg-yp1"/>
@@ -35,19 +32,19 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermark" translatesAutoresizingMaskIntoConstraints="NO" id="4Kh-H8-BaH">
-                    <rect key="frame" x="21" y="44" width="267" height="198"/>
+                    <rect key="frame" x="21.5" y="43.5" width="267" height="198"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="267" id="aMK-lf-F05"/>
                         <constraint firstAttribute="height" constant="198" id="bVv-1h-rwj"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vouch365" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwi-AI-3J0" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="115.5" y="10" width="80" height="19.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vouch365" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwi-AI-3J0" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="115" y="10" width="80" height="19.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOW-aa-x3l" customClass="VSButton" customModule="Vouch365" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOW-aa-x3l" customClass="VSButton" customModule="Pso_live" customModuleProvider="target">
                     <rect key="frame" x="277" y="10" width="23" height="23"/>
                     <state key="normal" image="redeem_cross"/>
                     <connections>
@@ -55,15 +52,15 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lL4-ad-BfY">
-                    <rect key="frame" x="113" y="67.5" width="85" height="85"/>
+                    <rect key="frame" x="112.5" y="67.5" width="85" height="85"/>
                     <color key="backgroundColor" red="0.94117647410000005" green="0.38823530080000002" blue="0.1294117719" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="85.329999999999998" id="NOR-v5-fid"/>
                         <constraint firstAttribute="width" secondItem="lL4-ad-BfY" secondAttribute="height" multiplier="1:1" id="VUP-ZL-EfK"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You and your guests are invited" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrG-Ug-24q" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="37.5" y="172" width="235" height="55"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You and your guests are invited" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrG-Ug-24q" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="37.5" y="172.5" width="235" height="55"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="235" id="ABI-Up-I47"/>
@@ -73,14 +70,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sucess Redemption Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3If-SN-cDP" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sucess Redemption Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3If-SN-cDP" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
                     <rect key="frame" x="67" y="256" width="176.5" height="14.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KC-wy-spH" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
-                    <rect key="frame" x="69" y="276.5" width="173" height="26"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KC-wy-spH" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
+                    <rect key="frame" x="68.5" y="276.5" width="173" height="26"/>
                     <color key="backgroundColor" red="1" green="0.81568627449999997" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                     <string key="text">Refrence Number
 3456788</string>
@@ -88,7 +85,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mn-81-vWI" customClass="VSButton" customModule="Vouch365" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mn-81-vWI" customClass="VSButton" customModule="Pso_live" customModuleProvider="target">
                     <rect key="frame" x="108" y="310" width="94" height="36"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -107,14 +104,14 @@
                         <action selector="didPressRedeem:" destination="-1" eventType="touchUpInside" id="4fw-4f-Abe"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers are subject to Rules of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVN-uv-2FN" customClass="VSLabel" customModule="Vouch365" customModuleProvider="target">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers are subject to Rules of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVN-uv-2FN" customClass="VSLabel" customModule="Pso_live" customModuleProvider="target">
                     <rect key="frame" x="68.5" y="352" width="173" height="14.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1R-HP-NtZ">
-                    <rect key="frame" x="68.5" y="348" width="173" height="45"/>
+                    <rect key="frame" x="68.5" y="348.5" width="173" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="ovo-eZ-on0"/>
                     </constraints>
@@ -163,6 +160,6 @@
     </objects>
     <resources>
         <image name="redeem_cross" width="23" height="23"/>
-        <image name="watermark" width="258" height="190"/>
+        <image name="watermark" width="258.5" height="190.5"/>
     </resources>
 </document>

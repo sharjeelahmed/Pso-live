@@ -14,23 +14,14 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "11.0"
   spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.0.0" }
  # spec.source_files  = "Pso-live/**/*"
- spec.source_files = 'Pso-live/**/*.{h,m,swift}'
+  spec.source_files = 'Pso-live/**/*.{h,m,swift}'
 
   spec.exclude_files = "Pso-live/Pso-live/*.plist"
-	spec.resources = ["Pso-live/Pso-live/Views/**/*.{xib}"]
+  #spec.resources = "Pso-live/Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
 
-  #spec.resources = "Pso-live/Pso-live/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset,xcdatamodeld}"
-# spec.resource_bundles = {
- #   'Pso-live' => [
-  #      'Pso-live123/**/*.xib'
-   # ]
-  #}
-  
-  #spec.resource_bundles = {
- # 'Pso-live' => ['Pso-live/**/*.xib']
- #}
- #spec.resources = 'Pso-live/*.xib'
-
+	
+	spec.resource = ["Pso-live/Views/*.{xib}"] #b590808
+	#spec.resources      = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :commit => "b590808"
   spec.swift_version = '4.0'
   spec.static_framework = true
 
