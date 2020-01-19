@@ -13,14 +13,10 @@ Pod::Spec.new do |spec|
   spec.author             = { "Shairjeel Ahmed" => "sharjeelahmed92@hotmail.com" }
   spec.platform = :ios, "11.0"
   spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.0.0" }
- # spec.source_files  = "Pso-live/**/*"
   spec.source_files = 'Pso-live/**/*.{h,m,swift}'
-
   spec.exclude_files = "Pso-live/Pso-live/*.plist"
-  #spec.resources = "Pso-live/Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
-
-	
-	spec.resource = ["Pso-live/Views/*.{xib}"] #b590808
+  #spec.resources = "Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
+	#spec.resource = ["Pso-live/Views/*.{xib}"] #b590808
 	#spec.resources      = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :commit => "b590808"
   spec.swift_version = '4.0'
   spec.static_framework = true
