@@ -17,6 +17,7 @@
   },
   "source_files": "Pso-live/Pso-live/**/*.{h,m,swift}",
   "exclude_files": "Pso-live/*.plist",
+  "resources": "Pso-live/Pso-live/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}",
   "swift_versions": "4.2",
   "static_framework": true,
   "dependencies": {
