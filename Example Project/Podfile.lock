@@ -10,7 +10,6 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (3.7.0):
     - GoogleMaps/Base (= 3.7.0)
-  - ImagePicker (3.1.0)
   - IQKeyboardManagerSwift (6.5.4)
   - Kingfisher (5.13.0):
     - Kingfisher/Core (= 5.13.0)
@@ -23,14 +22,13 @@ PODS:
   - "ObjectMapper+Realm (1.0)":
     - ObjectMapper
     - RealmSwift
-  - Pso-live (1.0.0):
+  - Pso-live (1.2.1):
     - ActionSheetPicker-3.0
     - AFViewShaker
     - Alamofire
     - CWStatusBarNotification
     - GoogleMaps
     - GooglePlaces
-    - ImagePicker
     - IQKeyboardManagerSwift
     - Kingfisher
     - KXHtmlLabel
@@ -63,7 +61,6 @@ SPEC REPOS:
     - CWStatusBarNotification
     - GoogleMaps
     - GooglePlaces
-    - ImagePicker
     - IQKeyboardManagerSwift
     - Kingfisher
     - KXHtmlLabel
@@ -88,14 +85,13 @@ SPEC CHECKSUMS:
   CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
   GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
   GooglePlaces: a62077320f9d64239245af63aa1aa136393ebeb6
-  ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
   KXHtmlLabel: 292f4f33a7a2b42ac66bcca1eb4c4502e33e0903
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   "ObjectMapper+Realm": bd713d57132bf05880a656695137764692f7d2bb
-  Pso-live: 8d11f5b03e7e372cabb57c994d3c6f6a15a32265
+  Pso-live: f35988ba9bd30acc2f7c9849bd91b5b26c5fbb53
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Realm: 31dc40934081ef740f60feedc46d88473cbfeb40
   RealmSwift: b5199e9a41f67b99f51acf6874a6166f5fbe93d1
@@ -103,6 +99,6 @@ SPEC CHECKSUMS:
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: eb2ad16ad0136dc3c6dcad0ad8e61268bfba92cd
+PODFILE CHECKSUM: 0595adc54fca3929aff0c2b0ab5ec2e3340db27d
 
 COCOAPODS: 1.8.4

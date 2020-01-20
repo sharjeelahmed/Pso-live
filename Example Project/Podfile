@@ -7,6 +7,6 @@ target 'Example Project' do
 
   # Pods for Example Project
 
- #pod 'Pso-live' , :path => "../" 
+   pod 'Pso-live' , :path => "../" 
 
 end
