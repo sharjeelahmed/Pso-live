@@ -759,27 +759,37 @@
 		DFD78D0823D1ACE300D29147 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DFD78D0923D1ACE300D29147 /* HistoryTableViewCell.swift */,
 				DFD78D0A23D1ACE300D29147 /* SucessRedeemView.swift */,
-				DFD78D0B23D1ACE300D29147 /* FilterCell.swift */,
-				DFD78D0C23D1ACE300D29147 /* Cells */,
-				DFD78D0D23D1ACE300D29147 /* DataWithLockTableViewCell.swift */,
+				DFD78D1123D1ACE300D29147 /* View_Profile.swift */,
+				DFD78D1423D1ACE300D29147 /* FilterView.swift */,
 				DFD78D0E23D1ACE300D29147 /* GifLoader.swift */,
+				DFD78D1623D1ACE300D29147 /* RedeemPinView.swift */,
+				DFD78D1923D1ACE300D29147 /* ViewOffer.swift */,
+				DFD78D1723D1ACE300D29147 /* SelectionView.swift */,
+				DFD78D2723D1ACE300D29147 /* FilterSimpleCell.swift */,
+				DFD78D3623D1ACE300D29147 /* FriendSearch.swift */,
+				DFD78D1D23D1ACE300D29147 /* RedeemView.swift */,
+				DFD78D2C23D1ACE300D29147 /* VSPINView.swift */,
+				DFD78D0C23D1ACE300D29147 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFD78D0C23D1ACE300D29147 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DFD78D0923D1ACE300D29147 /* HistoryTableViewCell.swift */,
+				DFD78D0B23D1ACE300D29147 /* FilterCell.swift */,
+				DFD78D0D23D1ACE300D29147 /* DataWithLockTableViewCell.swift */,
 				DFD78D0F23D1ACE300D29147 /* MainDetailsTableViewCell.swift */,
 				DFD78D1023D1ACE300D29147 /* OfferedInProductTableViewCell.swift */,
-				DFD78D1123D1ACE300D29147 /* View_Profile.swift */,
 				DFD78D1223D1ACE300D29147 /* IconCollectionViewCell.swift */,
 				DFD78D1323D1ACE300D29147 /* FavouriteTableViewCell.swift */,
-				DFD78D1423D1ACE300D29147 /* FilterView.swift */,
 				DFD78D1523D1ACE300D29147 /* LocationTableViewCell.swift */,
-				DFD78D1623D1ACE300D29147 /* RedeemPinView.swift */,
-				DFD78D1723D1ACE300D29147 /* SelectionView.swift */,
 				DFD78D1823D1ACE300D29147 /* AlternateTableViewCell.swift */,
-				DFD78D1923D1ACE300D29147 /* ViewOffer.swift */,
 				DFD78D1A23D1ACE300D29147 /* AccountTableViewCell.swift */,
 				DFD78D1B23D1ACE300D29147 /* BannerImageCollectionViewCell.swift */,
 				DFD78D1C23D1ACE300D29147 /* DataWithoutLockTableViewCell.swift */,
-				DFD78D1D23D1ACE300D29147 /* RedeemView.swift */,
 				DFD78D1E23D1ACE300D29147 /* NotificationImageTableViewCell.swift */,
 				DFD78D1F23D1ACE300D29147 /* DetailsCollectionViewCell.swift */,
 				DFD78D2023D1ACE300D29147 /* BannerCollectionViewCell.swift */,
@@ -789,12 +799,10 @@
 				DFD78D2423D1ACE300D29147 /* OfferDetailsTableViewCell.swift */,
 				DFD78D2523D1ACE300D29147 /* SelectionTableViewCell.swift */,
 				DFD78D2623D1ACE300D29147 /* OptionsCollectionViewCell.swift */,
-				DFD78D2723D1ACE300D29147 /* FilterSimpleCell.swift */,
 				DFD78D2823D1ACE300D29147 /* CategoryTableViewCell.swift */,
 				DFD78D2923D1ACE300D29147 /* DashboardOfferIconCell.swift */,
 				DFD78D2A23D1ACE300D29147 /* ItemListTableViewCell.swift */,
 				DFD78D2B23D1ACE300D29147 /* ProductTableViewCell.swift */,
-				DFD78D2C23D1ACE300D29147 /* VSPINView.swift */,
 				DFD78D2D23D1ACE300D29147 /* DetailMapTableViewCell.swift */,
 				DFD78D2E23D1ACE300D29147 /* SearchTableViewCell.swift */,
 				DFD78D2F23D1ACE300D29147 /* AllLevelBagdeTableViewCell.swift */,
@@ -804,16 +812,8 @@
 				DFD78D3323D1ACE300D29147 /* CompanyDescriptionTableViewCell.swift */,
 				DFD78D3423D1ACE300D29147 /* NotificationTextTableViewCell.swift */,
 				DFD78D3523D1ACE300D29147 /* DataWithSwitchTableViewCell.swift */,
-				DFD78D3623D1ACE300D29147 /* FriendSearch.swift */,
 				DFD78D3723D1ACE300D29147 /* VoucherTableViewCell.swift */,
 				DFD78D3823D1ACE300D29147 /* HeaderTableViewCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DFD78D0C23D1ACE300D29147 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -845,7 +845,7 @@
 				DF62A9AF23CBA014008BFAFD /* Sources */,
 				DF62A9B023CBA014008BFAFD /* Frameworks */,
 				DF62A9B123CBA014008BFAFD /* Resources */,
-				C858AE33627687F77852D3B8 /* [CP] Copy Pods Resources */,
+				A892D54B1FB6860E8328F387 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -995,7 +995,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C858AE33627687F77852D3B8 /* [CP] Copy Pods Resources */ = {
+		A892D54B1FB6860E8328F387 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
