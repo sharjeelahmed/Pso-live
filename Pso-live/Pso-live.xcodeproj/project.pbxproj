@@ -105,7 +105,6 @@
 		DFD78D9A23D1ACE300D29147 /* Vouchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78CC823D1ACE300D29147 /* Vouchers.swift */; };
 		DFD78D9B23D1ACE300D29147 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78CC923D1ACE300D29147 /* Level.swift */; };
 		DFD78D9C23D1ACE300D29147 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78CCA23D1ACE300D29147 /* PopUp.swift */; };
-		DFD78D9D23D1ACE300D29147 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFD78CCB23D1ACE300D29147 /* GoogleService-Info.plist */; };
 		DFD78DA023D1ACE300D29147 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78CD123D1ACE300D29147 /* Constants.swift */; };
 		DFD78DA123D1ACE300D29147 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78CD223D1ACE300D29147 /* Utilities.swift */; };
 		DFD78DA223D1ACE300D29147 /* VSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78CD323D1ACE300D29147 /* VSLabel.swift */; };
@@ -313,7 +312,6 @@
 		DFD78CC823D1ACE300D29147 /* Vouchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vouchers.swift; sourceTree = "<group>"; };
 		DFD78CC923D1ACE300D29147 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		DFD78CCA23D1ACE300D29147 /* PopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
-		DFD78CCB23D1ACE300D29147 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFD78CD123D1ACE300D29147 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DFD78CD223D1ACE300D29147 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		DFD78CD323D1ACE300D29147 /* VSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSLabel.swift; sourceTree = "<group>"; };
@@ -473,7 +471,6 @@
 				DFD78D3923D1ACE300D29147 /* Voucher365-Bridging-Header.h */,
 				DFD78CE023D1ACE300D29147 /* Bootstraper.swift */,
 				DFD78C7023D1ACE300D29147 /* pso-live.plist */,
-				DFD78CCB23D1ACE300D29147 /* GoogleService-Info.plist */,
 				DFD78CDC23D1ACE300D29147 /* Headers */,
 				DFD78CE123D1ACE300D29147 /* Controllers */,
 				DFD78D0823D1ACE300D29147 /* Views */,
@@ -845,7 +842,7 @@
 				DF62A9AF23CBA014008BFAFD /* Sources */,
 				DF62A9B023CBA014008BFAFD /* Frameworks */,
 				DF62A9B123CBA014008BFAFD /* Resources */,
-				A892D54B1FB6860E8328F387 /* [CP] Copy Pods Resources */,
+				23F5125DC5416080D3433A58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -936,7 +933,6 @@
 				DFD78D3E23D1ACE300D29147 /* SelectionTableViewCell.xib in Resources */,
 				DFD78D8523D1ACE300D29147 /* GIF-30.jpg in Resources */,
 				DFD78D8223D1ACE300D29147 /* GIF-19.jpg in Resources */,
-				DFD78D9D23D1ACE300D29147 /* GoogleService-Info.plist in Resources */,
 				DFD78D8423D1ACE300D29147 /* GIF-24.jpg in Resources */,
 				DFD78D6B23D1ACE300D29147 /* GIF-06.jpg in Resources */,
 				DFD78D4523D1ACE300D29147 /* RedeemView.xib in Resources */,
@@ -973,6 +969,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23F5125DC5416080D3433A58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pso-live/Pods-Pso-live-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pso-live/Pods-Pso-live-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pso-live/Pods-Pso-live-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A598C325F7C1F02B04AD57FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -993,23 +1006,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A892D54B1FB6860E8328F387 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pso-live/Pods-Pso-live-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pso-live/Pods-Pso-live-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pso-live/Pods-Pso-live-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
