@@ -5,14 +5,14 @@ Pod::Spec.new do |spec|
  
 
   spec.name         = "Pso-live"
-  spec.version      = "1.2.0"
+  spec.version      = "1.2.1"
   spec.summary      = "vouch pod for Pso"
   spec.description  = "Vouch framework for pso . presented by shairjeel ahmed"
   spec.homepage     = "https://github.com/sharjeelahmed/Pso-live"
   spec.license      = "MIT"
   spec.author             = { "Shairjeel Ahmed" => "sharjeelahmed92@hotmail.com" }
   spec.platform = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.2.0" }
+  spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.2.1" }
   spec.source_files = 'Pso-live/Pso-live/**/*.{h,m,swift}'
   spec.exclude_files = "Pso-live/*.plist"
   #spec.resources = "Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
@@ -42,7 +42,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'NVActivityIndicatorView'
   spec.dependency 'CWStatusBarNotification'
   spec.dependency 'AFViewShaker'
-  spec.dependency 'ImagePicker'
+ # spec.dependency 'ImagePicker'
   spec.dependency 'RealmSwift'
   spec.dependency 'ObjectMapper'
   spec.dependency 'ObjectMapper+Realm'
