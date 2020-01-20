@@ -83,7 +83,6 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.4.0):
     - GoogleUtilities/Logger
-  - ImagePicker (3.1.0)
   - IQKeyboardManagerSwift (6.5.4)
   - Kingfisher (5.12.0):
     - Kingfisher/Core (= 5.12.0)
@@ -122,7 +121,6 @@ DEPENDENCIES:
   - Firebase/Messaging
   - GoogleMaps
   - GooglePlaces
-  - ImagePicker
   - IQKeyboardManagerSwift
   - Kingfisher
   - KXHtmlLabel
@@ -156,7 +154,6 @@ SPEC REPOS:
     - GoogleMaps
     - GooglePlaces
     - GoogleUtilities
-    - ImagePicker
     - IQKeyboardManagerSwift
     - Kingfisher
     - KXHtmlLabel
@@ -201,7 +198,6 @@ SPEC CHECKSUMS:
   GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
   GooglePlaces: a62077320f9d64239245af63aa1aa136393ebeb6
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
-  ImagePicker: db1fd7626337b2577c523bef5f499bbbe5a37079
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   KXHtmlLabel: 292f4f33a7a2b42ac66bcca1eb4c4502e33e0903
@@ -218,6 +214,6 @@ SPEC CHECKSUMS:
   SwiftValidator: 249b6b3ae3b294266c5b9de134d94f18f2d5aa47
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: cdb1a2c4f932ebd1795310195efb875587010bcb
+PODFILE CHECKSUM: 27fd87c564477e6c997d2d1f32a7ebae9c8ce686
 
 COCOAPODS: 1.8.4

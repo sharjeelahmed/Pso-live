@@ -5,20 +5,20 @@ Pod::Spec.new do |spec|
  
 
   spec.name         = "Pso-live"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.summary      = "vouch pod for Pso"
   spec.description  = "Vouch framework for pso . presented by shairjeel ahmed"
   spec.homepage     = "https://github.com/sharjeelahmed/Pso-live"
   spec.license      = "MIT"
   spec.author             = { "Shairjeel Ahmed" => "sharjeelahmed92@hotmail.com" }
   spec.platform = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.1.0" }
-  spec.source_files = 'Pso-live/**/*.{h,m,swift}'
-  spec.exclude_files = "Pso-live/Pso-live/*.plist"
+  spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.2.0" }
+  spec.source_files = 'Pso-live/Pso-live/**/*.{h,m,swift}'
+  spec.exclude_files = "Pso-live/*.plist"
   #spec.resources = "Pso-live/**/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"
 	#spec.resource = ["Pso-live/Views/*.{xib}"] #b590808
 	#spec.resources      = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :commit => "b590808"
-  spec.swift_version = '4.0'
+  spec.swift_version = '4.2'
   spec.static_framework = true
 
 
@@ -31,8 +31,8 @@ Pod::Spec.new do |spec|
   spec.dependency 'SwiftGifOrigin'
   spec.dependency 'GoogleMaps'
   spec.dependency 'GooglePlaces'
-  spec.dependency 'Firebase/Analytics'
-  spec.dependency 'Firebase/Messaging'
+ # spec.dependency 'Firebase/Analytics'
+ # spec.dependency 'Firebase/Messaging'
   spec.dependency 'SwiftDate'
   spec.dependency 'ActionSheetPicker-3.0'
   spec.dependency 'Toast-Swift'

@@ -29,7 +29,7 @@ target 'Pso-live' do
 	pod 'NVActivityIndicatorView'
 	pod 'CWStatusBarNotification'
 	pod 'AFViewShaker'
-	pod 'ImagePicker'
+	#pod 'ImagePicker'
 	
 	
 	pod 'RealmSwift'
