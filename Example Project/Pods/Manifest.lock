@@ -1,3 +1,104 @@
-PODFILE CHECKSUM: 6c7023bfda0c61ebe4bc812795df2ad3f2387c57
+PODS:
+  - ActionSheetPicker-3.0 (2.4.1)
+  - AFViewShaker (0.0.5)
+  - Alamofire (4.9.1)
+  - CWStatusBarNotification (2.3.5)
+  - GoogleMaps (3.7.0):
+    - GoogleMaps/Maps (= 3.7.0)
+  - GoogleMaps/Base (3.7.0)
+  - GoogleMaps/Maps (3.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.7.0):
+    - GoogleMaps/Base (= 3.7.0)
+  - IQKeyboardManagerSwift (6.5.4)
+  - Kingfisher (5.13.0):
+    - Kingfisher/Core (= 5.13.0)
+  - Kingfisher/Core (5.13.0)
+  - KXHtmlLabel (0.8.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ObjectMapper (3.5.1)
+  - "ObjectMapper+Realm (1.0)":
+    - ObjectMapper
+    - RealmSwift
+  - Pso-live (1.2.3):
+    - ActionSheetPicker-3.0
+    - AFViewShaker
+    - Alamofire
+    - CWStatusBarNotification
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - KXHtmlLabel
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - "ObjectMapper+Realm"
+    - ReachabilitySwift
+    - RealmSwift
+    - SwiftDate
+    - SwiftGifOrigin
+    - Toast-Swift
+  - ReachabilitySwift (5.0.0)
+  - Realm (4.3.1):
+    - Realm/Headers (= 4.3.1)
+  - Realm/Headers (4.3.1)
+  - RealmSwift (4.3.1):
+    - Realm (= 4.3.1)
+  - SwiftDate (6.1.0)
+  - SwiftGifOrigin (1.7.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Pso-live (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - AFViewShaker
+    - Alamofire
+    - CWStatusBarNotification
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - KXHtmlLabel
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - "ObjectMapper+Realm"
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - SwiftDate
+    - SwiftGifOrigin
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  Pso-live:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d236f0b663123e4b404a3bc04b338c1e805ac910
+  AFViewShaker: fc201fa4c0030e3f4875b9f84ac0763828518b00
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
+  GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
+  GooglePlaces: a62077320f9d64239245af63aa1aa136393ebeb6
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
+  KXHtmlLabel: 292f4f33a7a2b42ac66bcca1eb4c4502e33e0903
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  "ObjectMapper+Realm": bd713d57132bf05880a656695137764692f7d2bb
+  Pso-live: bd67aa10ea474f8ddaf8204343e4af146c544286
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Realm: 31dc40934081ef740f60feedc46d88473cbfeb40
+  RealmSwift: b5199e9a41f67b99f51acf6874a6166f5fbe93d1
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 31702098b5c22b28c63970e3ebdcae946181bbde
 
 COCOAPODS: 1.8.4

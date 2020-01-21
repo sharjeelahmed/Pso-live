@@ -102,6 +102,8 @@
 				DF1EF80223CC9EFE0079742D /* Sources */,
 				DF1EF80323CC9EFE0079742D /* Frameworks */,
 				DF1EF80423CC9EFE0079742D /* Resources */,
+				6983480C5C915FDE99F21BA9 /* [CP] Embed Pods Frameworks */,
+				8EC69701CF0AA3B414E16EFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,6 +161,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6983480C5C915FDE99F21BA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EC69701CF0AA3B414E16EFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFFCB1318A6E4B2CBEA48FB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
