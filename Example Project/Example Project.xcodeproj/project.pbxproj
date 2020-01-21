@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		DF1EF80C23CC9EFE0079742D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1EF80B23CC9EFE0079742D /* SceneDelegate.swift */; };
 		DF1EF80E23CC9EFE0079742D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1EF80D23CC9EFE0079742D /* ViewController.swift */; };
 		DF1EF81123CC9EFE0079742D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1EF80F23CC9EFE0079742D /* Main.storyboard */; };
-		DF1EF81323CC9F010079742D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1EF81223CC9F010079742D /* Assets.xcassets */; };
+		DF1EF81323CC9F010079742D /* absd.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1EF81223CC9F010079742D /* absd.xcassets */; };
 		DF1EF81623CC9F010079742D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1EF81423CC9F010079742D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		DF1EF80B23CC9EFE0079742D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF1EF80D23CC9EFE0079742D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF1EF81023CC9EFE0079742D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DF1EF81223CC9F010079742D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF1EF81223CC9F010079742D /* absd.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = absd.xcassets; sourceTree = "<group>"; };
 		DF1EF81523CC9F010079742D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1EF81723CC9F010079742D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFD78B6A12F15138C6EFB042 /* Pods-Example Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example Project.release.xcconfig"; path = "Target Support Files/Pods-Example Project/Pods-Example Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 				24472C697B89CC923C07AB2D /* Pods-Example Project.debug.xcconfig */,
 				FFD78B6A12F15138C6EFB042 /* Pods-Example Project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,7 +84,7 @@
 				DF1EF80B23CC9EFE0079742D /* SceneDelegate.swift */,
 				DF1EF80D23CC9EFE0079742D /* ViewController.swift */,
 				DF1EF80F23CC9EFE0079742D /* Main.storyboard */,
-				DF1EF81223CC9F010079742D /* Assets.xcassets */,
+				DF1EF81223CC9F010079742D /* absd.xcassets */,
 				DF1EF81423CC9F010079742D /* LaunchScreen.storyboard */,
 				DF1EF81723CC9F010079742D /* Info.plist */,
 			);
@@ -103,8 +102,8 @@
 				DF1EF80223CC9EFE0079742D /* Sources */,
 				DF1EF80323CC9EFE0079742D /* Frameworks */,
 				DF1EF80423CC9EFE0079742D /* Resources */,
-				C876C9EE9596EEEA22A3CF93 /* [CP] Embed Pods Frameworks */,
-				84E7C7712D5BFCDB58A0273F /* [CP] Copy Pods Resources */,
+				5132F8F54CD56370747ED096 /* [CP] Embed Pods Frameworks */,
+				DF09429AA15F1D1D0B639476 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1EF81623CC9F010079742D /* LaunchScreen.storyboard in Resources */,
-				DF1EF81323CC9F010079742D /* Assets.xcassets in Resources */,
+				DF1EF81323CC9F010079742D /* absd.xcassets in Resources */,
 				DF1EF81123CC9EFE0079742D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,21 +161,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		84E7C7712D5BFCDB58A0273F /* [CP] Copy Pods Resources */ = {
+		5132F8F54CD56370747ED096 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFFCB1318A6E4B2CBEA48FB5 /* [CP] Check Pods Manifest.lock */ = {
@@ -201,21 +200,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C876C9EE9596EEEA22A3CF93 /* [CP] Embed Pods Frameworks */ = {
+		DF09429AA15F1D1D0B639476 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example Project/Pods-Example Project-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

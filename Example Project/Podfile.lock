@@ -22,7 +22,7 @@ PODS:
   - "ObjectMapper+Realm (1.0)":
     - ObjectMapper
     - RealmSwift
-  - Pso-live (1.2.1):
+  - Pso-live (1.2.3):
     - ActionSheetPicker-3.0
     - AFViewShaker
     - Alamofire
@@ -91,7 +91,7 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   "ObjectMapper+Realm": bd713d57132bf05880a656695137764692f7d2bb
-  Pso-live: f44f4f0c0f1982ad13f33fcabc2e3775be857e6d
+  Pso-live: f5a4d9dad6140e30de8ef97517bae9da0b041a85
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Realm: 31dc40934081ef740f60feedc46d88473cbfeb40
   RealmSwift: b5199e9a41f67b99f51acf6874a6166f5fbe93d1
@@ -99,6 +99,6 @@ SPEC CHECKSUMS:
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 0595adc54fca3929aff0c2b0ab5ec2e3340db27d
+PODFILE CHECKSUM: 31702098b5c22b28c63970e3ebdcae946181bbde
 
 COCOAPODS: 1.8.4
