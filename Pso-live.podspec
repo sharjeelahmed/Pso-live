@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "Shairjeel Ahmed" => "sharjeelahmed92@hotmail.com" }
   spec.platform = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :tag => "1.2.3" }
+  spec.source       = { :git => "https://github.com/sharjeelahmed/Pso-live.git", :commit => "4dea037" }
   spec.source_files = 'Pso-live/Pso-live/**/*.{h,m,swift}'
   spec.exclude_files = "Pso-live/*.plist"
   spec.resources = "Pso-live/Pso-live/**/*.{gif,png,jpeg,jpg,lproj,storyboard,xib,xcassets,imageset}"

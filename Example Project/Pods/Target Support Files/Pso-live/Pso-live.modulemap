@@ -1,6 +1,0 @@
-framework module Pso_live {
-  umbrella header "Pso-live-umbrella.h"
-
-  export *
-  module * { export * }
-}
