@@ -348,7 +348,7 @@ class OfferViewController: UIViewController ,PINViewDelegate{
   
   @IBAction func showInviteView(_ sender: UIButton) {
     
-    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    let storyBoard = UIStoryboard(name: "Main-Pso", bundle: nil)
     let viewController =   storyBoard.instantiateViewController(withIdentifier: "InviteViewController") as! InviteViewController
     viewController.hidesBottomBarWhenPushed = true
 

@@ -33,9 +33,9 @@
 		DFD78D5223D1ACE300D29147 /* pinViewUnSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C7B23D1ACE300D29147 /* pinViewUnSelected@2x.png */; };
 		DFD78D5323D1ACE300D29147 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78C7D23D1ACE300D29147 /* ServiceLayer.swift */; };
 		DFD78D5423D1ACE300D29147 /* ServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD78C7E23D1ACE300D29147 /* ServiceWrapper.swift */; };
-		DFD78D5623D1ACE300D29147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8123D1ACE300D29147 /* Main.storyboard */; };
-		DFD78D5723D1ACE300D29147 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8223D1ACE300D29147 /* Login.storyboard */; };
-		DFD78D5823D1ACE300D29147 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8323D1ACE300D29147 /* Account.storyboard */; };
+		DFD78D5623D1ACE300D29147 /* Main-Pso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8123D1ACE300D29147 /* Main-Pso.storyboard */; };
+		DFD78D5723D1ACE300D29147 /* Login-Pso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8223D1ACE300D29147 /* Login-Pso.storyboard */; };
+		DFD78D5823D1ACE300D29147 /* Account-Pso.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8323D1ACE300D29147 /* Account-Pso.storyboard */; };
 		DFD78D5923D1ACE300D29147 /* GIF-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8523D1ACE300D29147 /* GIF-02.jpg */; };
 		DFD78D5A23D1ACE300D29147 /* GIF-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8623D1ACE300D29147 /* GIF-16.jpg */; };
 		DFD78D5B23D1ACE300D29147 /* GIF-17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C8723D1ACE300D29147 /* GIF-17.jpg */; };
@@ -239,9 +239,9 @@
 		DFD78C7B23D1ACE300D29147 /* pinViewUnSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinViewUnSelected@2x.png"; sourceTree = "<group>"; };
 		DFD78C7D23D1ACE300D29147 /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		DFD78C7E23D1ACE300D29147 /* ServiceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceWrapper.swift; sourceTree = "<group>"; };
-		DFD78C8123D1ACE300D29147 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DFD78C8223D1ACE300D29147 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		DFD78C8323D1ACE300D29147 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		DFD78C8123D1ACE300D29147 /* Main-Pso.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-Pso.storyboard"; sourceTree = "<group>"; };
+		DFD78C8223D1ACE300D29147 /* Login-Pso.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Login-Pso.storyboard"; sourceTree = "<group>"; };
+		DFD78C8323D1ACE300D29147 /* Account-Pso.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Account-Pso.storyboard"; sourceTree = "<group>"; };
 		DFD78C8523D1ACE300D29147 /* GIF-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-02.jpg"; sourceTree = "<group>"; };
 		DFD78C8623D1ACE300D29147 /* GIF-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-16.jpg"; sourceTree = "<group>"; };
 		DFD78C8723D1ACE300D29147 /* GIF-17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "GIF-17.jpg"; sourceTree = "<group>"; };
@@ -581,9 +581,9 @@
 		DFD78C7F23D1ACE300D29147 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				DFD78C8123D1ACE300D29147 /* Main.storyboard */,
-				DFD78C8223D1ACE300D29147 /* Login.storyboard */,
-				DFD78C8323D1ACE300D29147 /* Account.storyboard */,
+				DFD78C8123D1ACE300D29147 /* Main-Pso.storyboard */,
+				DFD78C8223D1ACE300D29147 /* Login-Pso.storyboard */,
+				DFD78C8323D1ACE300D29147 /* Account-Pso.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -893,7 +893,7 @@
 				DFD78D6423D1ACE300D29147 /* GIF-38.jpg in Resources */,
 				DFD78D8623D1ACE300D29147 /* GIF-26.jpg in Resources */,
 				DFD78D4023D1ACE300D29147 /* View_Profile.xib in Resources */,
-				DFD78D5723D1ACE300D29147 /* Login.storyboard in Resources */,
+				DFD78D5723D1ACE300D29147 /* Login-Pso.storyboard in Resources */,
 				DFD78D6723D1ACE300D29147 /* GIF-11.jpg in Resources */,
 				DFD78D7923D1ACE300D29147 /* GIF-22.jpg in Resources */,
 				DFD78D4423D1ACE300D29147 /* VSPINView.xib in Resources */,
@@ -905,7 +905,7 @@
 				DFD78D7A23D1ACE300D29147 /* GIF-08.jpg in Resources */,
 				DFD78D8823D1ACE300D29147 /* GIF-33.jpg in Resources */,
 				DFD78D7423D1ACE300D29147 /* GIF-45.jpg in Resources */,
-				DFD78D5823D1ACE300D29147 /* Account.storyboard in Resources */,
+				DFD78D5823D1ACE300D29147 /* Account-Pso.storyboard in Resources */,
 				DFD78D4323D1ACE300D29147 /* ViewOffer.xib in Resources */,
 				DFD78D7E23D1ACE300D29147 /* GIF-35.jpg in Resources */,
 				DFD78D6D23D1ACE300D29147 /* splash11.jpg in Resources */,
@@ -932,7 +932,7 @@
 				DFD78D8423D1ACE300D29147 /* GIF-24.jpg in Resources */,
 				DFD78D6B23D1ACE300D29147 /* GIF-06.jpg in Resources */,
 				DFD78D4523D1ACE300D29147 /* RedeemView.xib in Resources */,
-				DFD78D5623D1ACE300D29147 /* Main.storyboard in Resources */,
+				DFD78D5623D1ACE300D29147 /* Main-Pso.storyboard in Resources */,
 				DFD78D4223D1ACE300D29147 /* GifLoader.xib in Resources */,
 				DFD78D4F23D1ACE300D29147 /* pinViewSelected@2x.png in Resources */,
 				DFD78D6023D1ACE300D29147 /* GIF-14.jpg in Resources */,

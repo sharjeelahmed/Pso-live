@@ -375,7 +375,7 @@ class HomeViewController: UIViewController, UISearchBarDelegate, UISearchControl
         //let viewController = navigation.viewControllers.first as! RootOfferDetailsViewController
         //self.navigationController?.present(navigation, animated: true, completion: nil)
         
-        let viewController:RootOfferDetailsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootOfferDetailsViewController") as! RootOfferDetailsViewController
+        let viewController:RootOfferDetailsViewController = UIStoryboard(name: "Main-Pso", bundle: nil).instantiateViewController(withIdentifier: "RootOfferDetailsViewController") as! RootOfferDetailsViewController
         
         viewController.company = self.company
         viewController.hidesBottomBarWhenPushed = true
@@ -534,7 +534,7 @@ extension HomeViewController: DashboardOfferIconCellDelegate {
     
     self.citySelection.removeFromSuperview()
     
-    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    let storyBoard = UIStoryboard(name: "Main-Pso", bundle: nil)
     let viewController =   storyBoard.instantiateViewController(withIdentifier: "RootListMapViewController") as! RootListMapViewController
     
     print(array_cat[index])
@@ -564,7 +564,7 @@ extension HomeViewController: DashboardOfferBannerCellDelegate {
     }
     else if index.linktype == "tab" {
       print("Index is \(index.tab!)")
-      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      let storyboard = UIStoryboard(name: "Main-Pso", bundle: nil)
       
       let viewController: RootListMapViewController = storyboard.instantiateViewController(withIdentifier: "RootListMapViewController") as! RootListMapViewController
       

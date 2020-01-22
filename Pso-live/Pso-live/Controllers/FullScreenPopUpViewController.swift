@@ -11,7 +11,7 @@ import UIKit
 class FullScreenPopUpViewController: UIViewController {
 	
 	class func instantiateFromStoryboard() -> FullScreenPopUpViewController {
-		  return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as! FullScreenPopUpViewController
+		  return UIStoryboard(name: "Main-Pso", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as! FullScreenPopUpViewController
 	  }
 	
 	@IBOutlet weak var imageView:UIImageView!

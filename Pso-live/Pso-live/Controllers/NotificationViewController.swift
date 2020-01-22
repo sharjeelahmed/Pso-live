@@ -215,7 +215,7 @@ extension NotificationViewController: UITableViewDelegate, UITableViewDataSource
                 
                 let company = local_company
                 
-                let viewController:RootOfferDetailsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootOfferDetailsViewController") as! RootOfferDetailsViewController
+                let viewController:RootOfferDetailsViewController = UIStoryboard(name: "Main-Pso", bundle: nil).instantiateViewController(withIdentifier: "RootOfferDetailsViewController") as! RootOfferDetailsViewController
                viewController.company = company
                 
                 viewController.hidesBottomBarWhenPushed = true

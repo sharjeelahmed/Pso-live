@@ -72,7 +72,7 @@ class TutorialPageViewController: UIPageViewController {
   }
   
   private func newColoredViewController(color: String) -> UIViewController {
-    return UIStoryboard(name: "Login", bundle: nil) .
+    return UIStoryboard(name: "Login-Pso", bundle: nil) .
       instantiateViewController(withIdentifier: "\(color)ViewController")
   }
   

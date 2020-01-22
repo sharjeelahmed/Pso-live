@@ -191,7 +191,7 @@ class ProfileViewController: UIViewController {
   }
   
 	@objc func settings() {
-    let viewController:AccountViewController = UIStoryboard(name: "Account", bundle: nil).instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
+    let viewController:AccountViewController = UIStoryboard(name: "Account-Pso", bundle: nil).instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
     viewController.hidesBottomBarWhenPushed = true
 
     self.navigationController?.pushViewController(viewController, animated: true)

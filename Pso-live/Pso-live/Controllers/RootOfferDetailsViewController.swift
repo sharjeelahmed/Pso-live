@@ -77,7 +77,7 @@ class RootOfferDetailsViewController: UIViewController {
   }
   
   func showLocations() {
-    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    let storyBoard = UIStoryboard(name: "Main-Pso", bundle: nil)
     let locationController = storyBoard.instantiateViewController(withIdentifier: "LocationsViewController") as!  UINavigationController
     
     let locationController1 = locationController.viewControllers[0] as! LocationsViewController

@@ -183,14 +183,14 @@ public struct Bootstrapper {
 	}
 	
 	private func showInitialViewController() {
-		if let viewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoaderViewController") as? LoaderViewController {
+		if let viewController = UIStoryboard(name: "Login-Pso", bundle: nil).instantiateViewController(withIdentifier: "LoaderViewController") as? LoaderViewController {
 			self.window.rootViewController = viewController
 		}
 	}
 	
 	private func showLogin() {
 		
-		if let viewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController {
+		if let viewController = UIStoryboard(name: "Login-Pso", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController {
 			self.window.rootViewController = viewController
 		}
 		//        if let viewController = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "RootViewController") as? RootViewController {
@@ -203,7 +203,7 @@ public struct Bootstrapper {
 	
 	private func showHome() {
 		
-		if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? UIViewController {
+		if let viewController = UIStoryboard(name: "Main-Pso", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? UIViewController {
 			self.window.rootViewController = viewController
 		}
 		
