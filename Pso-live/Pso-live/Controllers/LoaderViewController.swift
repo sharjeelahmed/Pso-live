@@ -86,7 +86,10 @@ class LoaderViewController: UIViewController {
   }
   
   func animationDidFinish() {
-    Bootstrapper.initializeAfterLoading()
+	if let viewController = UIStoryboard(name: "Main-Pso", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? UIViewController {
+		self.present(viewController, animated: true, completion: nil)
+	}
+    //Bootstrapper.initializeAfterLoading()
   }
   
   /*

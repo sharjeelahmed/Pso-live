@@ -64,7 +64,7 @@ class OfferViewController: UIViewController ,PINViewDelegate{
     }
     
     self.view_msg.isHidden = true
-    getProfile(user_id: User.getUserID())
+    //getProfile(user_id: User.getUserID())
   }
   
   override func didReceiveMemoryWarning() {
@@ -577,14 +577,14 @@ extension OfferViewController : UITableViewDelegate {
   
   func showPopup(_voucher : VoucherData) {
     
-    if (User.getUserID() == "1"){
+    /*if (User.getUserID() == "1"){
       // perhaps use action.title here
       Bootstrapper.reset()
       Bootstrapper.showLogin()
       
       return
-    }
-    else if (_voucher.redeemed)! {
+    }*/
+     if (_voucher.redeemed)! {
 		let alertController = UIAlertController(title: "Vouch365", message: "Already Redeemed", preferredStyle: UIAlertController.Style.alert)
 		let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
         (result : UIAlertAction) -> Void in
@@ -798,18 +798,18 @@ extension OfferViewController: RedeemViewDelegate {
   
   func didCloseView() {
     container.removeFromSuperview()
+	self.view.endEditing(true)
   }
   
   func showInputViewRedeem(eligible: Bool) {
     container.removeFromSuperview()
     
-    if !eligible {
-      self.tabBarController?.selectedIndex = 4
-      return
-    }
+  
     
     container = UIView()
-    container.frame = CGRect(x: 0, y: 30, width: self.view.frame.size.width, height: (UIApplication.shared.keyWindow?.frame.height)!)
+	container.frame = CGRect(x: 0, y: 30, width: self.view.frame.size.width, height: self.view.frame.height)
+
+    //container.frame = CGRect(x: 0, y: 30, width: self.view.frame.size.width, height: (UIApplication.shared.keyWindow?.frame.height)!)
     
 	let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
     let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -866,6 +866,8 @@ extension OfferViewController: RedeemViewDelegate {
 
 extension OfferViewController: RedeemPinViewDelegate {
   func didClosePinView() {
+	self.view.endEditing(true)
+	redeemPinView.resignFirstResponder()
     redeemPinView.inputField.resignFirstResponder()
     container.removeFromSuperview()
   }

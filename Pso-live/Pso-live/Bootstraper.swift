@@ -22,6 +22,8 @@ public struct Bootstrapper {
 		manager.start()*/
 	}
 	
+	
+	
 	public static func initializeWithParam(unique_param: String, token: String){
 		validateCredentials(unique_param: unique_param, token: token)
 	}
@@ -173,9 +175,12 @@ public struct Bootstrapper {
 		ServiceWrapper.psoSdkCall(requestObject: requestObject) {
 			(success, response) in
 			if success == false{
-				instance = Bootstrapper(window: makeNewWindow())
-				instance!.bootstrap()
-				Thread.sleep(forTimeInterval: 1)
+				if let viewController = UIStoryboard(name: "Main-Pso", bundle: nil).instantiateViewController(withIdentifier: "TabBarController") as? UIViewController {
+					
+				}
+				//instance = Bootstrapper(window: makeNewWindow())
+				//instance!.bootstrap()
+				//Thread.sleep(forTimeInterval: 1)
 				
 			}
 		}

@@ -147,13 +147,13 @@ class RootOfferDetailsViewController: UIViewController {
     
     favorite = UIButton(type: .custom)
     
-    if company.favourite! {
+   /* if company.favourite! {
       isSelected = true
       favorite.setImage(UIImage(named: "favorite_selected"), for: .normal)
     }else {
       isSelected = false
       favorite.setImage(UIImage(named: "favorite_unselected"), for: .normal)
-    }
+    }*/
     
     favorite.frame = CGRect(x: 0, y: 0, width: 32, height: 31)
 	favorite.titleEdgeInsets = UIEdgeInsets(top: 0, left: -35, bottom: 0, right: 35);

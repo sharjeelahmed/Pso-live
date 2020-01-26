@@ -51,9 +51,8 @@ ${PODS_ROOT}/../../Pso-live/Pso-live/AnimationsImages/GIF-47.jpg
 ${PODS_ROOT}/../../Pso-live/Pso-live/AnimationsImages/GIF-48.jpg
 ${PODS_ROOT}/../../Pso-live/Pso-live/AnimationsImages/splash11.jpg
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/adamjee_Logo-1.imageset/Screenshot 2019-12-11 at 4.45.29 PM-1.png
-${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/adamjee_Logo-1.imageset/Screenshot 2019-12-11 at 4.45.29 PM.png
-${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/adamjee_Logo.imageset/Screenshot 2019-12-11 at 4.45.29 PM-1.png
-${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/adamjee_Logo.imageset/Screenshot 2019-12-11 at 4.45.29 PM.png
+${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/adamjee_Logo-1.imageset/vouch_pso_logo 2.png
+${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/adamjee_Logo.imageset/Screenshot 2019-12-11 at 4.45.29 PM-1.png 21-42-09-654.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/addFriend.imageset/addFriend.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/AppIcon.appiconset/1024.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/AppIcon.appiconset/114.png
@@ -315,15 +314,16 @@ ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/Tutorials/tutorial5.im
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/uncheck.imageset/1x.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/uncheck.imageset/2x.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/uncheck.imageset/3x.png
+${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch365.imageset/vouch365.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch_logo.imageset/2x.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch_logo.imageset/3x.png
+${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch_pso_logo.imageset/vouch_pso_logo 2.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/watermark.imageset/2x.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/watermark.imageset/3x.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/loader.gif
-${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/Account.storyboard
-${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/LaunchScreen.storyboard
-${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/Login.storyboard
-${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/Main.storyboard
+${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/Account-Pso.storyboard
+${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/Login-Pso.storyboard
+${PODS_ROOT}/../../Pso-live/Pso-live/StoryBoard/Main-Pso.storyboard
 ${PODS_ROOT}/../../Pso-live/Pso-live/ThirdPartyClasses/APPinView/pinViewSelected.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/ThirdPartyClasses/APPinView/pinViewSelected@2x.png
 ${PODS_ROOT}/../../Pso-live/Pso-live/ThirdPartyClasses/APPinView/pinViewUnSelected.png
@@ -462,5 +462,7 @@ ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/Tutorials/tutorial3.im
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/Tutorials/tutorial4.imageset
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/Tutorials/tutorial5.imageset
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/uncheck.imageset
+${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch365.imageset
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch_logo.imageset
+${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/vouch_pso_logo.imageset
 ${PODS_ROOT}/../../Pso-live/Pso-live/Resources/A.xcassets/watermark.imageset

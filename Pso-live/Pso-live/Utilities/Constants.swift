@@ -16,8 +16,8 @@ class Constants: NSObject {
   
     
     
-	static let baseUrlStagging = "http://secapipso.vouch365.mobi"
-	static let baseUrl = "http://secapipso.vouch365.mobi"
+	static let baseUrlStagging = "https://secapipso.vouch365.mobi"
+	static let baseUrl = "https://secapipso.vouch365.mobi"
 	
 
     

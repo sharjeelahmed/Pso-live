@@ -18,7 +18,28 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func btnPressed(_ sender:UIButton){
-		Bootstrapper.initializeWithParam(unique_param: "03124578451", token: "1#Jf@dJ3%e8O}qQYs{DS")
+		//HomeViewController.instantiateFromStoryboard()
+		let vouchMana = VouchManager()
+		 vouchMana.getVouchNavigaionController(unique_param: "923351134885",token: "1#Jf@dJ3%e8O}qQYs{DS", completionHandler: {success,NavCon,errorDes in
+			if success{
+				if let nav = NavCon{
+					nav.modalPresentationStyle = .fullScreen
+					self.present(nav, animated: true, completion: nil)
+				}
+			}else{
+				print(errorDes)
+			}
+			
+		}
+		)
+		
+		//HomeVc.modalPresentationStyle = .fullScreen
+		//self.present(HomeVc, animated: true, completion: nil)
+		//self.present(HomeVc, animated: true, completion: nil)
+		
+		//VouchManager.instantiateFromStoryboard()
+		
+		//Bootstrapper.initializeWithParam(unique_param: "03124578451", token: "1#Jf@dJ3%e8O}qQYs{DS")
 	}
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF63770623D9E8F700A8C170 /* HomeVendorLogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63770523D9E8F700A8C170 /* HomeVendorLogoTableViewCell.swift */; };
 		DFD78D3B23D1ACE300D29147 /* APPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C5D23D1ACE300D29147 /* APPinViewController.xib */; };
 		DFD78D3C23D1ACE300D29147 /* RedeemPinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C5E23D1ACE300D29147 /* RedeemPinView.xib */; };
 		DFD78D3D23D1ACE300D29147 /* FriendSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD78C5F23D1ACE300D29147 /* FriendSearch.xib */; };
@@ -213,6 +214,7 @@
 		28177DCEB8EEDC10C343C7FC /* Pods-Pso-live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pso-live.release.xcconfig"; path = "Target Support Files/Pods-Pso-live/Pods-Pso-live.release.xcconfig"; sourceTree = "<group>"; };
 		A38275F6B6134CAD9B94D429 /* Pods_Pso_live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pso_live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF62A9B323CBA014008BFAFD /* Pso_live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pso_live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF63770523D9E8F700A8C170 /* HomeVendorLogoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVendorLogoTableViewCell.swift; sourceTree = "<group>"; };
 		DFD78C5D23D1ACE300D29147 /* APPinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPinViewController.xib; sourceTree = "<group>"; };
 		DFD78C5E23D1ACE300D29147 /* RedeemPinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedeemPinView.xib; sourceTree = "<group>"; };
 		DFD78C5F23D1ACE300D29147 /* FriendSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendSearch.xib; sourceTree = "<group>"; };
@@ -772,6 +774,7 @@
 		DFD78D0C23D1ACE300D29147 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DF63770523D9E8F700A8C170 /* HomeVendorLogoTableViewCell.swift */,
 				DFD78D0923D1ACE300D29147 /* HistoryTableViewCell.swift */,
 				DFD78D0B23D1ACE300D29147 /* FilterCell.swift */,
 				DFD78D0D23D1ACE300D29147 /* DataWithLockTableViewCell.swift */,
@@ -1040,6 +1043,7 @@
 				DFD78DBD23D1ACE300D29147 /* VouchFriendsViewController.swift in Sources */,
 				DFD78DA023D1ACE300D29147 /* Constants.swift in Sources */,
 				DFD78E0123D1ACE300D29147 /* FriendSearch.swift in Sources */,
+				DF63770623D9E8F700A8C170 /* HomeVendorLogoTableViewCell.swift in Sources */,
 				DFD78DDC23D1ACE300D29147 /* View_Profile.swift in Sources */,
 				DFD78DAA23D1ACE300D29147 /* VSTextField.swift in Sources */,
 				DFD78D8D23D1ACE300D29147 /* Location.swift in Sources */,

@@ -275,8 +275,11 @@ class ServiceWrapper: ServiceLayer {
     @escaping (_ success : Bool, _ response : NSDictionary) -> Void) {
     
     // Call the function to Hit the POST request
-    let user = User.getUserID()
+   // let user = User.getUserID()
+	let user = "03124578451"
     let city = User.getCity()
+	
+	
     
     //NVActivityIndicatorPresenter.sharedInstance.startAnimating(ActivityData())
     //activity.center = CGPoint(x: (appDelegate.window?.frame.origin.x)!/2, y: (appDelegate.window?.frame.origin.y)!/2)

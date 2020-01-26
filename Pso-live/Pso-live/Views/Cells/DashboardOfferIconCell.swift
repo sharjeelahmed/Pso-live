@@ -84,12 +84,12 @@ extension DashboardOfferIconCell: UICollectionViewDelegateFlowLayout{
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
   {
-    return    Utilities.convertIphone6ToIphone5_Width(size: 18)
+      Utilities.convertIphone6ToIphone5_Width(size: 18)
   }
   
  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
  {
-  return    Utilities.convertIphone6ToIphone5_Width(size: 18)
+     Utilities.convertIphone6ToIphone5_Width(size: 18)
 
   }
 

@@ -91,8 +91,10 @@ class RootListMapViewController: UIViewController , FilterViewDelegate, UITextFi
 		//AppDelegate.getInstatnce().window?.addSubview(filterView)
 		//AppDelegate.getInstatnce().window?.bringSubviewToFront(filterView)
 	//sdk change
-	HomeViewController.getInstatnce().window!?.addSubview(filterView)
-	HomeViewController.getInstatnce().window!?.bringSubviewToFront(filterView)
+	
+	
+	self.view.addSubview(filterView)
+	self.view.bringSubviewToFront(filterView)
     filterView.setCategory(category: titleOfController)
     filterView.filterDelegate = self
     filterView.isHidden = true

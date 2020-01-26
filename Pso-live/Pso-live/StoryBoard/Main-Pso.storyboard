@@ -801,7 +801,7 @@
         <!--HomeViewController-->
         <scene sceneID="zXw-5d-Deu">
             <objects>
-                <viewController id="Jop-lZ-L0f" userLabel="HomeViewController" customClass="HomeViewController" customModule="Pso_live" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Jop-lZ-L0f" userLabel="HomeViewController" customClass="HomeViewController" customModule="Pso_live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lFE-2V-dV3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -823,14 +823,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-90-B6H">
-                                        <rect key="frame" x="323" y="-7.5" width="49" height="49"/>
+                                        <rect key="frame" x="323" y="-6" width="46" height="46"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0Eg-90-B6H" secondAttribute="height" multiplier="1:1" id="Fvz-KT-151"/>
                                         </constraints>
-                                        <state key="normal" image="search"/>
+                                        <state key="normal" image="redeem_cross"/>
                                         <connections>
-                                            <action selector="didTapOnSearch:" destination="Jop-lZ-L0f" eventType="touchUpInside" id="HHE-RK-3CH"/>
+                                            <action selector="didTapOnCross:" destination="Jop-lZ-L0f" eventType="touchUpInside" id="Zel-5d-KQ2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -850,8 +850,8 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nlf-Zg-2ib">
                                 <rect key="frame" x="0.0" y="41" width="375" height="710"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="0uX-Rc-60I">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="0uX-Rc-60I">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -875,7 +875,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="IIJ-Y4-S9d">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="IIJ-Y4-S9d">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </imageView>
@@ -1063,7 +1063,7 @@
                                                 <outlet property="delegate" destination="Jop-lZ-L0f" id="BRD-Nr-RNV"/>
                                             </connections>
                                         </collectionView>
-                                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-au-IZr">
+                                        <view hidden="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-au-IZr">
                                             <rect key="frame" x="0.0" y="256" width="375" height="40"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNZ-uc-q0M">
@@ -1175,12 +1175,22 @@
                                                         <outlet property="delegate" destination="QUP-Ie-crH" id="0Hn-Z2-wbj"/>
                                                     </connections>
                                                 </collectionView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjH-3G-Ptv">
+                                                    <rect key="frame" x="0.0" y="79" width="375" height="11"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="Auh-42-mG4"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="o3h-gG-clu" firstAttribute="leading" secondItem="bT8-9Q-f3f" secondAttribute="leading" constant="10" id="4An-IU-iqy"/>
                                                 <constraint firstAttribute="bottom" secondItem="o3h-gG-clu" secondAttribute="bottom" id="GAY-2Y-I3w"/>
+                                                <constraint firstAttribute="trailing" secondItem="VjH-3G-Ptv" secondAttribute="trailing" id="JU8-oF-khY"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="o3h-gG-clu" secondAttribute="trailing" constant="2" id="T4f-bk-lAK"/>
+                                                <constraint firstAttribute="bottom" secondItem="VjH-3G-Ptv" secondAttribute="bottom" id="VFp-cG-jq5"/>
+                                                <constraint firstItem="VjH-3G-Ptv" firstAttribute="leading" secondItem="bT8-9Q-f3f" secondAttribute="leading" id="trm-YD-SBH"/>
                                                 <constraint firstItem="o3h-gG-clu" firstAttribute="top" secondItem="bT8-9Q-f3f" secondAttribute="top" id="w2P-NN-K0S"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1189,8 +1199,35 @@
                                             <outlet property="collectionView" destination="o3h-gG-clu" id="yyx-4H-xXZ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardOfferBannerCell" rowHeight="235" id="ldd-N8-WuM" customClass="DashboardOfferBannerCell" customModule="Pso_live" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeVendorLogoTableViewCell" rowHeight="235" id="gNq-KW-Uad" customClass="HomeVendorLogoTableViewCell" customModule="Pso_live" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="414" width="375" height="235"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gNq-KW-Uad" id="r1G-KS-jqy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vouch_pso_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Sgi-h8-FY3">
+                                                    <rect key="frame" x="5" y="-10.5" width="256" height="256"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vouch365" translatesAutoresizingMaskIntoConstraints="NO" id="OD6-av-fKU">
+                                                    <rect key="frame" x="-63" y="18.5" width="428" height="198"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Sgi-h8-FY3" firstAttribute="leading" secondItem="r1G-KS-jqy" secondAttribute="leading" constant="5" id="QT7-Ch-N2D"/>
+                                                <constraint firstAttribute="trailing" secondItem="OD6-av-fKU" secondAttribute="trailing" constant="10" id="frR-gM-Wgh"/>
+                                                <constraint firstItem="Sgi-h8-FY3" firstAttribute="centerY" secondItem="r1G-KS-jqy" secondAttribute="centerY" id="n8D-tu-yhb"/>
+                                                <constraint firstItem="OD6-av-fKU" firstAttribute="centerY" secondItem="r1G-KS-jqy" secondAttribute="centerY" id="oLd-AO-Ov6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94119042159999999" green="0.9373704195" blue="0.93301320080000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="vendorLogo" destination="Sgi-h8-FY3" id="USu-b8-LeB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardOfferBannerCell" rowHeight="235" id="ldd-N8-WuM" customClass="DashboardOfferBannerCell" customModule="Pso_live" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="649" width="375" height="235"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ldd-N8-WuM" id="Gnz-Kl-xZ1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
@@ -1447,6 +1484,8 @@
                             <constraint firstItem="6Or-8K-fow" firstAttribute="leading" secondItem="6kn-NS-j7z" secondAttribute="leading" id="bZz-Yn-mXs"/>
                             <constraint firstItem="zfQ-vq-bNg" firstAttribute="top" secondItem="6Or-8K-fow" secondAttribute="bottom" id="hO6-90-Vey"/>
                             <constraint firstItem="6Or-8K-fow" firstAttribute="top" secondItem="6kn-NS-j7z" secondAttribute="top" id="lLg-Lb-neL"/>
+                            <constraint firstAttribute="trailing" secondItem="nlf-Zg-2ib" secondAttribute="trailing" id="qf4-70-K7O"/>
+                            <constraint firstItem="nlf-Zg-2ib" firstAttribute="leading" secondItem="6kn-NS-j7z" secondAttribute="leading" id="s6d-Pe-BvD"/>
                             <constraint firstItem="zfQ-vq-bNg" firstAttribute="width" secondItem="lFE-2V-dV3" secondAttribute="width" id="spc-R3-C9T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6kn-NS-j7z"/>
@@ -1534,7 +1573,7 @@
                 </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jg9-2O-kpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2327.1999999999998" y="-824.8875562218891"/>
+            <point key="canvasLocation" x="-2402" y="-743"/>
         </scene>
         <!--Root List Map View Controller-->
         <scene sceneID="HWJ-VS-Gmj">
@@ -4148,5 +4187,7 @@
         <image name="tab_fav_unselected" width="30" height="30"/>
         <image name="top_btn_shadow" width="3.5" height="7"/>
         <image name="uncheck" width="16.5" height="17"/>
+        <image name="vouch365" width="214" height="99.333335876464844"/>
+        <image name="vouch_pso_logo" width="128.33332824707031" height="128.33332824707031"/>
     </resources>
 </document>
