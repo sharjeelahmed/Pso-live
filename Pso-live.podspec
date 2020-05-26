@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
  
 
   spec.name         = "Pso-live"
-  spec.version      = "1.2.5"
+  spec.version      = "1.2.6"
   spec.summary      = "vouch pod for Pso"
   spec.description  = "Vouch framework for pso . presented by shairjeel ahmed"
   spec.homepage     = "https://github.com/sharjeelahmed/Pso-live"
