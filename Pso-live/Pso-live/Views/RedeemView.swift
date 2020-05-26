@@ -38,9 +38,14 @@ class RedeemView: UIView {
     
     // Make the view stretch with containing view
 	view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
-    
+	if #available(iOS 13.0, *) {
+		view.overrideUserInterfaceStyle = .light
+	} else {
+		// Fallback on earlier versions
+	}
     
     addSubview(view)
+	
   }
   
   func loadViewFromNib() -> UIView {
@@ -51,6 +56,8 @@ class RedeemView: UIView {
     
     return view
   }
+	
+	
   
   override init(frame: CGRect) {
     // 1. setup any properties here

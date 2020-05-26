@@ -43,6 +43,11 @@ class RootListMapViewController: UIViewController , FilterViewDelegate, UITextFi
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     
+	if #available(iOS 13.0, *) {
+		overrideUserInterfaceStyle = .light
+	} else {
+		
+	}
     if voucherFromHome.linktype == "tab"{
       self.selectedCategory = voucherFromHome.tab!
     }

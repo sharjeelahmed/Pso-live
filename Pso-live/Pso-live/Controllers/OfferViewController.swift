@@ -53,6 +53,12 @@ class OfferViewController: UIViewController ,PINViewDelegate{
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	
+	if #available(iOS 13.0, *) {
+		overrideUserInterfaceStyle = .light
+	} else {
+		
+	}
     
     // Do any additional setup after loading the view.
     let url = URL(string: "\(company.logo!)")
@@ -437,7 +443,11 @@ class OfferViewController: UIViewController ,PINViewDelegate{
     }
     let redeemView = SucessRedeemView(frame: CGRect(x: (self.view.frame.midX - viewWidth/2), y: y_axis, width: viewWidth , height:height))
     
-    
+	if #available(iOS 13.0, *) {
+		redeemView.overrideUserInterfaceStyle = .light
+	} else {
+		// Fallback on earlier versions
+	}
     //  redeemView = SucessRedeemView(frame: CGRect(x: 0, y: -40, width: self.view.frame.size.width / 1.21 , height: height))
     print(" the width is \(redeemView.frame.width) , the height is \(redeemView.frame.height)")
     redeemView.delegate = self
@@ -470,9 +480,10 @@ class OfferViewController: UIViewController ,PINViewDelegate{
     alertWindow.rootViewController = UIViewController()
 	alertWindow.windowLevel = UIWindow.Level.alert + 1
     alertWindow.makeKeyAndVisible()
-  //  alertWindow.rootViewController?.present(alert, animated: true) { _ in }
+   // alertWindow.rootViewController?.present(alert, animated: true) { _ in }
+
 	alertWindow.rootViewController?.present(alert, animated: true, completion: nil)
-    
+ 
     //    UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
     
     //    AppDelegate.getInstatnce().window?.rootViewController?.present(alert, animated: true, completion: nil)
@@ -489,6 +500,26 @@ class OfferViewController: UIViewController ,PINViewDelegate{
 	container.sendSubviewToBack(alert.view)
     redeemPinView.wrongServiceProviderPin(error: desc)
   }
+	
+	func redeemGetsFailed (desc: String) {
+		UIApplication.shared.endIgnoringInteractionEvents()
+
+		let desc = desc
+		let alert = UIAlertController(title: "", message: desc, preferredStyle: .alert)
+		self.present(alert, animated: false, completion: nil)
+		let when = DispatchTime.now() + 2
+		DispatchQueue.main.asyncAfter(deadline: when){
+			// your code with delay
+			alert.dismiss(animated: true, completion: nil)
+			self.redeemPinView.inputField.becomeFirstResponder()
+
+		}
+		
+
+		
+	}
+	
+
   
   @IBAction func didDollarButton(_ sender: UIButton) {
     button_send_cancel.setTitle("Cancel", for: .normal)
@@ -844,6 +875,12 @@ extension OfferViewController: RedeemViewDelegate {
     
     redeemPinView = RedeemPinView(frame: CGRect(x: (self.view.frame.midX - viewWidth/2), y: y_axis, width: viewWidth , height:height))
     redeemPinView.delegate = self
+	
+	if #available(iOS 13.0, *) {
+		redeemPinView.overrideUserInterfaceStyle = .light
+	} else {
+		// Fallback on earlier versions
+	}
     
     let url = URL(string: company.logo!)
     redeemPinView.image_logo.kf.setImage(with: url)

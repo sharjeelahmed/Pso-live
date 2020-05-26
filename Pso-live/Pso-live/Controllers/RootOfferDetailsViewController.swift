@@ -33,13 +33,18 @@ class RootOfferDetailsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	
+	if #available(iOS 13.0, *) {
+		overrideUserInterfaceStyle = .light
+	} else {
+		
+	}
     
     setupNavigation()
     
     button_offer.titleLabel!.font =  UIFont(name: "Helvetica-Light", size: 13)
     button_details.titleLabel!.font =  UIFont(name: "Helvetica-Light", size: 13)
     
-    self.navigationItem.title = company.name
     
     if selectedButtonIndex == 0 {
       
@@ -71,10 +76,13 @@ class RootOfferDetailsViewController: UIViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    
+    self.navigationItem.title = company.name
+
     self.navigationController?.setNavigationBarHidden(false, animated: true)
 
   }
+	
+	
   
   func showLocations() {
     let storyBoard = UIStoryboard(name: "Main-Pso", bundle: nil)
@@ -122,11 +130,30 @@ class RootOfferDetailsViewController: UIViewController {
      }
      */
   }
+	
+	 func setupNavigationTitle() {
+	   
+	   let label = UILabel(frame: CGRect(x:0, y:0, width:self.view.frame.size.width, height:50))
+	   label.center = self.view.center
+	   label.backgroundColor = UIColor.clear
+	   label.numberOfLines = 2
+	   label.font = UIFont(name: "Helvetica-Light", size: 13)!
+	   label.textAlignment = .center
+	   label.textColor = UIColor.black
+
+	   
+	   label.text = company.name
+	   
+	   let titleView = UIView(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(100), height: CGFloat(50)))
+	   label.frame = titleView.bounds
+	   titleView.addSubview(label)
+		self.navigationItem.titleView = titleView
+	}
   
   
   func setupNavigation() {
     
-    self.navigationController?.navigationBar.barTintColor = UIColor.white
+   /* self.navigationController?.navigationBar.barTintColor = UIColor.white
     self.navigationController?.navigationBar.isTranslucent = false
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -137,7 +164,10 @@ class RootOfferDetailsViewController: UIViewController {
     self.tabBarController?.tabBar.shadowImage = UIImage()
     
 	self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica-Light", size: 13)!]
-    
+	self.navigationItem.title = company.name*/
+	
+	setupNavigationTitle()
+	
     let backbutton = UIButton(type: .custom)
     backbutton.setImage(UIImage(named: "back"), for: .normal)
     backbutton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
@@ -302,6 +332,7 @@ class RootOfferDetailsViewController: UIViewController {
     Utilities.showLoader(controller: self)
     
     ServiceWrapper.getRedeem(requestObject: dict as NSDictionary, completionHandler: { (sucess, response) in
+		Utilities.removeLoader()
       print("response = %@", response);
       if sucess {
         
@@ -316,9 +347,9 @@ class RootOfferDetailsViewController: UIViewController {
         }
       }else {
         let desc = response.value(forKey: "desc") as! String
-        self.nextSceneOffer.redeemIsFailed(desc: desc)
-        
+        //self.nextSceneOffer.redeemIsFailed(desc: desc)
+		 self.nextSceneOffer.redeemGetsFailed(desc: desc)
       }
     })
-  }  
+  }
 }

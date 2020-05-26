@@ -37,6 +37,12 @@ class ItemListingMapViewController: UIViewController , CLLocationManagerDelegate
   
   override func viewDidLoad() {
     super.viewDidLoad()
+	
+	if #available(iOS 13.0, *) {
+		overrideUserInterfaceStyle = .light
+	} else {
+		
+	}
     
     // Do any additional setup after loading the view.
     print("Viewss are \(titleOfView)")
