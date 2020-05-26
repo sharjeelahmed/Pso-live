@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   
   # 7
   spec.dependency 'Kingfisher'
-  spec.dependency 'Alamofire'
+  spec.dependency 'Alamofire' , '~> 4.5'
   spec.dependency 'ReachabilitySwift'
   spec.dependency 'SwiftGifOrigin'
   spec.dependency 'GoogleMaps'
